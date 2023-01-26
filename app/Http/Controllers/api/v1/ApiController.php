@@ -25,7 +25,7 @@ class ApiController extends Controller
                         "AdditionalIssueType": "2",
                         "AdditionalIssueDocInfo":{
                             "TipoEmision":"01",
-                            "NumeroDF":"0000000905",
+                            "NumeroDF":"0000000906",
                             "PtoFactDF":"001",
                             "CodigoSeguridad":"000813673",
                             "NaturalezaOperacion":"01",
@@ -155,7 +155,7 @@ class ApiController extends Controller
         
         //dump($xml);
         $url = config('digifact.url').'transform/nuc?TAXID='.config('digifact.ruc').'&FORMAT=XML&USERNAME='.config('digifact.username');
-        //dump($url);
+        dd($url);
 
 
         $response = Http::
