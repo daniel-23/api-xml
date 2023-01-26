@@ -22,7 +22,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::post('/v1/invoices', [ApiV1::class, 'invoices']);
 
 Route::post('/v1/certificate-fe-xml-tosign', [ApiV1::class, 'certificate_fe_xml_tosign']);
-//Route::get('/v1/certificate-fe-xml-tosign', [ApiV1::class, 'certificate_fe_xml_tosign']);
+Route::get('/v1/certificate-fe-xml-tosign', [ApiV1::class, 'certificate_fe_xml_tosign']);
 Route::post('/v1/cancel-fel', [ApiV1::class, 'cancel_fel']);
 //Route::get('/v1/cancel-fel', [ApiV1::class, 'cancel_fel']);
 
