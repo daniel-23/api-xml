@@ -155,7 +155,7 @@ class ApiController extends Controller
         
         //dump($xml);
         $url = config('digifact.url').'transform/nuc?TAXID='.config('digifact.ruc').'&FORMAT=XML&USERNAME='.config('digifact.username');
-        dd($url);
+        //dd($url);
 
 
         $response = Http::
